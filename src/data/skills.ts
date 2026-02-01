@@ -16,7 +16,7 @@ export const skillsData = {
       description:
         "Expertise in semantic markup, SEO best practices, and ARIA for accessible web structures.",
       yearsExperience: 7,
-      icon: "/Icons/HTML.png",
+      icon: "/Icons/html.png",
     },
     {
       id: "2",
@@ -43,7 +43,7 @@ export const skillsData = {
       description:
         "Building scalable SPAs using functional components, hooks, and advanced state patterns.",
       yearsExperience: 5,
-      icon: "/Icons/React.png",
+      icon: "/Icons/react.png",
     },
     {
       id: "5",
