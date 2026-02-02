@@ -3,16 +3,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { experienceData, educationData, certificationData } from "@/data/experience";
-import { FaGraduationCap, FaBriefcase, FaCertificate, FaDownload, FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGraduationCap, FaBriefcase, FaCertificate, FaDownload, FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const About = () => {
     // Social Links Data
     const socialLinks = [
-        { icon: <FaGithub />, url: "https://github.com/", color: "hover:text-white" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com/", color: "hover:text-blue-400" },
-        { icon: <FaFacebook />, url: "https://facebook.com/", color: "hover:text-blue-600" },
-        { icon: <FaInstagram />, url: "https://instagram.com/", color: "hover:text-pink-500" },
-        { icon: <FaTwitter />, url: "https://twitter.com/", color: "hover:text-sky-400" },
+        { icon: <FaGithub />, url: "https://github.com/TiranChanuka", color: "hover:text-white" },
+        { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/tiranchanuka/", color: "hover:text-blue-400" },
+        { icon: <FaEnvelope />, url: "mailto:tiranchanukaw@gmail.com", color: "hover:text-white" },
+        { icon: <FaPhone />, url: "tel:+94717494134", color: "hover:text-blue-400" },
+        { icon: <FaWhatsapp />, url: "https://wa.me/+94766817172", color: "hover:text-green-400" }
+
+        // { icon: <FaFacebook />, url: "https://facebook.com/", color: "hover:text-blue-600" },
+        // { icon: <FaInstagram />, url: "https://instagram.com/", color: "hover:text-pink-500" },
+        // { icon: <FaTwitter />, url: "https://twitter.com/", color: "hover:text-sky-400" },
     ];
 
     return (
@@ -73,7 +77,7 @@ const About = () => {
                                     {/* Stats Row */}
                                     <div className="grid grid-cols-2 gap-4 mb-8">
                                         <div className="bg-white/5 p-3 rounded-xl border border-white/5">
-                                            <span className="block text-2xl font-bold text-white">1.6+</span>
+                                            <span className="block text-2xl font-bold text-white">3.6+</span>
                                             <span className="text-[10px] text-gray-400 uppercase tracking-wider">Years Exp</span>
                                         </div>
                                         <div className="bg-white/5 p-3 rounded-xl border border-white/5">
@@ -83,9 +87,9 @@ const About = () => {
                                     </div>
 
                                     {/* CV Button */}
-                                    <button className="w-full py-3 rounded-xl bg-white text-black font-bold flex items-center justify-center gap-2 hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-900/20 mb-6">
+                                    {/* <button className="w-full py-3 rounded-xl bg-white text-black font-bold flex items-center justify-center gap-2 hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-900/20 mb-6">
                                         <FaDownload /> Download CV
-                                    </button>
+                                    </button> */}
 
                                     {/* Social Links (New Addition) */}
                                     <div className="flex justify-center gap-4 pt-4 border-t border-white/10">

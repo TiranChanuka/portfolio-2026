@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export const socials = [
     {
@@ -16,4 +16,14 @@ export const socials = [
         icon: FaEnvelope,
         url: "mailto:tiranchanuka@gmail.com",
     },
+    {
+        name: "Phone",
+        icon: FaPhone,
+        url: "tel:+94717494134",
+    },
+    {
+        name: "Whatsapp",
+        icon: FaWhatsapp,
+        url: "https://wa.me/+94766817172",
+    }
 ];

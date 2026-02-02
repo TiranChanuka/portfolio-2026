@@ -1,10 +1,10 @@
 export const experienceData = [
     {
-        title: "Junior Software Engineer",
+        title: "Frontend Developer",
         company: "Infoxty Technologies",
         period: "2024 (Dec) - Present",
         description:
-            "Currently working as an Junior Software Engineer, focusing on frontend development using React, Next js and also Wordpress. Involved in building scalable web applications and optimizing performance.",
+            "Currently working as an Frontend Developer, focusing on frontend development using React, Next js and also Wordpress. Involved in building scalable web applications and optimizing performance.",
     },
     {
         title: "Software Engineer Intern",
