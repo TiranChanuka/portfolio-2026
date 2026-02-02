@@ -85,8 +85,8 @@ const Projects = () => {
                                 key={category}
                                 onClick={() => setActiveCategory(category)}
                                 className={`px-5 py-2 rounded-lg text-xs font-mono font-bold border transition-all duration-300 ${activeCategory === category
-                                        ? "bg-white text-black border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]"
-                                        : "bg-transparent text-gray-500 border-white/10 hover:border-white/40 hover:text-white"
+                                    ? "bg-white text-black border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]"
+                                    : "bg-transparent text-gray-500 border-white/10 hover:border-white/40 hover:text-white"
                                     }`}
                             >
                                 {category}
@@ -115,25 +115,25 @@ const Projects = () => {
                                     key={project.id}
                                     className={`group relative rounded-3xl overflow-hidden border border-white/10 bg-[#0a0a0a] transition-all duration-500 ${getBentoClass(index)} ${styleProps.borderHover} ${styleProps.glow}`}
                                 >
-                                    {/* 1. Image Background */}
-                                    <div className="absolute inset-0 w-full h-full">
+                                    {/* 1. Image Background - Link wrapper */}
+                                    <a href={`/projects/${project.slug}`} className="absolute inset-0 w-full h-full cursor-pointer z-10" aria-label={`View ${project.title}`}>
                                         <img
                                             src={project.image}
                                             alt={project.title}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-60"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
-                                    </div>
+                                    </a>
 
                                     {/* 2. Project Index Number */}
-                                    <div className="absolute top-4 right-6 z-20">
+                                    <div className="absolute top-4 right-6 z-20 pointer-events-none">
                                         <span className="text-5xl font-black text-white/5 select-none group-hover:text-white/10 transition-colors">
                                             {String(index + 1).padStart(2, '0')}
                                         </span>
                                     </div>
 
                                     {/* 3. Content Overlay */}
-                                    <div className="absolute inset-0 p-6 flex flex-col justify-end z-20">
+                                    <div className="absolute inset-0 p-6 flex flex-col justify-end z-20 pointer-events-none">
 
                                         {/* Top Left: Category Badge Only */}
                                         <div className="absolute top-6 left-6">
@@ -146,20 +146,23 @@ const Projects = () => {
                                         <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
 
                                             {/* Title & Live Button Row */}
-                                            <div className="flex items-center gap-3 mb-3">
-                                                <h3 className={`font-bold text-white leading-tight transition-colors ${isWide ? "text-2xl md:text-3xl" : "text-xl"} ${styleProps.textHover}`}>
+                                            <div className="flex items-center gap-3 mb-3 pointer-events-auto">
+                                                <a href={`/projects/${project.slug}`} className={`font-bold text-white leading-tight transition-colors ${isWide ? "text-2xl md:text-3xl" : "text-xl"} ${styleProps.textHover}`}>
                                                     {project.title}
-                                                </h3>
+                                                </a>
 
                                                 {/* Live Button (Always Visible) */}
-                                                <a
-                                                    href={project.liveUrl}
-                                                    target="_blank"
-                                                    className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20 text-white hover:bg-white hover:text-black transition-all hover:scale-110 backdrop-blur-md shrink-0"
-                                                    title="View Live"
-                                                >
-                                                    <FaArrowUpRightFromSquare size={12} />
-                                                </a>
+                                                {project.liveUrl && (
+                                                    <a
+                                                        href={project.liveUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20 text-white hover:bg-white hover:text-black transition-all hover:scale-110 backdrop-blur-md shrink-0 relative z-30"
+                                                        title="View Live"
+                                                    >
+                                                        <FaArrowUpRightFromSquare size={12} />
+                                                    </a>
+                                                )}
                                             </div>
 
                                             <p className="text-gray-400 text-sm line-clamp-2 mb-4 font-light group-hover:text-gray-300">
