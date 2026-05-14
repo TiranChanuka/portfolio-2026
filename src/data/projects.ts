@@ -250,21 +250,21 @@ export const projectsData: Project[] = [
     story:
       "Nature Core is a comprehensive e-commerce solution designed to provide a seamless shopping experience. The project involved building a robust frontend using React and TypeScript, ensuring type safety and scalability. Tailwind CSS was utilized for rapid UI development, resulting in a responsive and visually appealing interface. Key features include dynamic product filtering, a fully functional shopping cart, and secure checkout processes.",
   },
-  // {
-  //   id: 16,
-  //   year: "2026",
-  //   title: "Woo Product Sync Plugin",
-  //   slug: "woo-product-sync-plugin",
-  //   description:
-  //     "A custom WordPress plugin to sync WooCommerce products with an external inventory API in real time.",
-  //   image: "/Projects/Mistiora tours.png",
-  //   technologies: ["PHP", "WordPress", "WooCommerce", "REST API"],
-  //   category: "Plugin Development",
-  //   liveUrl: "https://mistioratours.com/",
-  //   gallery: ["/Projects/Mistiora tours.png"],
-  //   story:
-  //     "This plugin was developed to automate product and stock synchronization between WooCommerce and a third-party inventory service. It includes scheduled sync jobs, secure API authentication, admin-side logs, and manual re-sync controls to improve reliability and reduce manual update work.",
-  // },
+  {
+    id: 16,
+    year: "2026",
+    title: "WooCommerce Custom Shipping with Pickup",
+    slug: "woocommerce-custom-shipping-with-pickup",
+    description:
+      "Custom shipping rates based on country, postal code, weight, and local pickup options",
+    image: "/Projects/Mistiora tours.png",
+    technologies: ["PHP", "WordPress", "WooCommerce", "REST API"],
+    category: "Plugin Development",
+    liveUrl: "https://mistioratours.com/",
+    gallery: ["/Projects/Mistiora tours.png"],
+    story:
+      "This plugin adds custom shipping options to WooCommerce, including country-based rates, postal code-specific pricing, weight-based calculations, and local pickup support. It provides flexibility for store owners to manage shipping costs efficiently.",
+  },
   {
     id: 17,
     year: "2026",
