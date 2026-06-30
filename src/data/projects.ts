@@ -257,11 +257,11 @@ export const projectsData: Project[] = [
     slug: "woocommerce-custom-shipping-with-pickup",
     description:
       "Custom shipping rates based on country, postal code, weight, and local pickup options",
-    image: "/Projects/Mistiora tours.png",
+    image: "/Projects/woocommerce plugin.webp",
     technologies: ["PHP", "WordPress", "WooCommerce", "REST API"],
     category: "Plugin Development",
     liveUrl: "https://mistioratours.com/",
-    gallery: ["/Projects/Mistiora tours.png"],
+    gallery: ["/Projects/woocommerce plugin.webp"],
     story:
       "This plugin adds custom shipping options to WooCommerce, including country-based rates, postal code-specific pricing, weight-based calculations, and local pickup support. It provides flexibility for store owners to manage shipping costs efficiently.",
   },
