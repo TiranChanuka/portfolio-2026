@@ -294,4 +294,65 @@ export const projectsData: Project[] = [
     story:
       "Mistiora Tours is a WordPress website for a local tour company. It features a responsive design built with Elementor and ACF, showcasing tour packages, booking forms, and customer testimonials.",
   },
+  {
+    id: 19,
+    year: "2026",
+    title: "The Code Coin -  Landing Page",
+    slug: "the-code-coin",
+    description:
+      "Deployed a pixel-perfect, high-converting learning platform. Engineered responsive UI/UX structures, optimized front-end asset loading for speed, and integrated secure lead-capture frameworks with automated background SMTP handling to maximize user onboarding",
+    image: "/Projects/Code Coin.webp",
+    technologies: ["WordPress", "Elementor", "Cloudflare"],
+    category: "WordPress",
+    liveUrl: "https://landing.thecodecoin.com/",
+    gallery: ["/Projects/Code Coin.webp"],
+    story:
+      "Deployed a pixel-perfect, high-converting learning platform. Engineered responsive UI/UX structures, optimized front-end asset loading for speed, and integrated secure lead-capture frameworks with automated background SMTP handling to maximize user onboarding",
+  },
+  {
+    id: 20,
+    year: "2026",
+    title: "Program Store",
+    slug: "program-store",
+    description:
+      "Developed a clean digital storefront tailored for software products and tech courses.",
+    image: "/Projects/ProgramStore.webp",
+    technologies: ["WordPress", "Elementor","WooCommerce", "Cloudflare"],
+    category: "WordPress",
+    liveUrl: "https://programstore.thecodecoin.com",
+    gallery: ["/Projects/ProgramStore.webp"],
+    story:
+      "Developed a clean digital storefront tailored for software products and tech courses. I focused on building intuitive customer dashboards for key tracking alongside smooth, automated download pipelines that deliver files instantly post-checkout.",
+  },
+  {
+    id: 21,
+    year: "2026",
+    title: "Program Travel Lanka",
+    slug: "program-travel-lanka",
+    description:
+      "Created an engaging travel platform designed around interactive trip loops.",
+    image: "/Projects/program lanka.webp",
+    technologies: ["WordPress", "Elementor", "Cloudflare"],
+    category: "WordPress",
+    liveUrl: "https://travel.thecodecoin.com/",
+    gallery: ["/Projects/program lanka.webp"],
+    story:
+      "Created an engaging travel platform designed around interactive trip loops. I optimized the media-heavy layouts for snappy loading times and simplified the consultation process with high-converting contact forms to capture qualified local leads.",
+  },
+  {
+    id: 22,
+    year: "2026",
+    title: "Apex Solar",
+    slug: "apex-solar",
+    description:
+      "Designed a sleek corporate site featuring a custom, multi-step Solar & EV Savings Calculator.",
+    image: "/Projects/apex solar.webp",
+    technologies: ["WordPress", "Elementor", "Cloudflare"],
+    category: "WordPress",
+    liveUrl: "https://apexsolar.thecodecoin.com/",
+    gallery: ["/Projects/apex solar.webp"],
+    story:
+      "Designed a sleek corporate site featuring a custom, multi-step Solar & EV Savings Calculator. This user-friendly tool makes complex utility calculations simple, capturing detailed customer specs and transforming casual visitors into valuable commercial leads.",
+  },
+
 ];
