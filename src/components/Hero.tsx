@@ -261,18 +261,42 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="relative"
+            className="relative flex items-center justify-center"
           >
-            {/* Soft Glow behind avatar */}
-            <div className="absolute inset-0 bg-purple-600/20 blur-[100px] rounded-full" />
+            {/* Cyberpunk Radial Glow Layer */}
+            <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-tr from-cyan-500/20 via-purple-500/20 to-pink-500/20 blur-[80px] rounded-full z-0" />
+            
+            {/* Outer Glowing Tech Ring */}
+            <div className="absolute w-[270px] h-[270px] md:w-[460px] md:h-[460px] rounded-full border border-cyan-500/20 bg-gradient-to-tr from-cyan-500/10 via-transparent to-purple-500/10 animate-[spin_20s_linear_infinite] z-0" />
 
-            <motion.img
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              src="/profile.webp"
-              alt="Tiran Chanuka"
-              className="relative z-10 w-[250px] md:w-[500px] drop-shadow-2xl"
-            />
+            {/* Rotating Tech Dashed Orbits */}
+            <div className="absolute w-[290px] h-[290px] md:w-[490px] md:h-[490px] border border-dashed border-cyan-500/15 rounded-full animate-[spin_30s_linear_infinite] pointer-events-none z-0" />
+            <div className="absolute w-[310px] h-[310px] md:w-[520px] md:h-[520px] border border-dashed border-purple-500/10 rounded-full animate-[spin_45s_linear_infinite_reverse] pointer-events-none z-0" />
+
+            {/* Subtle Tech Corner Brackets */}
+            <div className="absolute w-[270px] h-[270px] md:w-[450px] md:h-[450px] pointer-events-none z-20">
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-400/40 rounded-tl-3xl" />
+              <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-purple-400/40 rounded-tr-3xl" />
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-purple-400/40 rounded-bl-3xl" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-pink-400/40 rounded-br-3xl" />
+            </div>
+
+            {/* Image Container with Radial Mask (fades edges smoothly) */}
+            <div
+              className="relative z-10 w-[250px] md:w-[420px] aspect-square rounded-full overflow-hidden bg-[#050505]/40 backdrop-blur-sm"
+              style={{
+                maskImage: "radial-gradient(circle at center, black 50%, rgba(0,0,0,0.8) 72%, transparent 95%)",
+                WebkitMaskImage: "radial-gradient(circle at center, black 50%, rgba(0,0,0,0.8) 72%, transparent 95%)",
+              }}
+            >
+              <motion.img
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                src="/profile.webp"
+                alt="Tiran Chanuka"
+                className="w-full h-full object-cover select-none"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
